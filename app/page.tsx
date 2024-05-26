@@ -62,6 +62,28 @@ export default function Home() {
   return (
     <main className='bg-gray-100'>
       <section className='relative hero min-h-screen flex flex-col justify-center items-center'>
+        <div className='absolute w-full top-0 h-14 z-30'>
+          <div className='w-[720px] mx-auto h-full flex'>
+            <Link
+              href='/'
+              className='pr-4 h-full flex items-center hover:text-gray-600'
+            >
+              Trang chủ
+            </Link>
+            <Link
+              href='#contact-us'
+              className='px-4 h-full flex items-center hover:text-gray-600'
+            >
+              Liên lạc
+            </Link>
+            <Link
+              href='/privacy-policy'
+              className='px-4 h-full flex items-center hover:text-gray-600'
+            >
+              Chính sách bảo mật
+            </Link>
+          </div>
+        </div>
         <div className='absolute w-full h-screen z-0 opacity-35'>
           <Image src='/icon.png' alt='Invoy App' fill />
         </div>
@@ -83,15 +105,15 @@ export default function Home() {
                 <div className='mt-6 text-md'>Với Invoy, bạn có thể</div>
                 <div className='space-y-2 mt-2'>
                   <div className='text-base'>
-                    - Quản lý danh sách nhà cung cấp sản phẩm; quản lý sản phẩm
+                    • Quản lý danh sách nhà cung cấp sản phẩm; quản lý sản phẩm
                     trên từng nhà cung cấp
                   </div>
                   <div className='text-base'>
-                    - Quản lý việc nhập sản phẩm, quản lý công nợ cho từng nhà
+                    • Quản lý việc nhập sản phẩm, quản lý công nợ cho từng nhà
                     quản lý
                   </div>
                   <div className='text-base'>
-                    - Tạo hoá đơn thanh toán các sản phẩm đã nhập
+                    • Tạo hoá đơn thanh toán các sản phẩm đã nhập
                   </div>
                 </div>
               </div>
